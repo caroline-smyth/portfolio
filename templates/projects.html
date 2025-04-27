@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/static/general.css">
+    <script src="/static/functions.js"></script>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html" data-text="Home">Home</a>
+    <a href="projects.html" class="active" data-text="Projects">Projects</a>
+    <a href="lists.html" data-text="Favorites">Favorites</a>
+  </div>
+    <div class="container">
+      <div class="project-container">
+        <div class="project-card">
+          <h2>Lion Dine</h2>
+          <p>
+            Check out what's for dinner at Columbia <a href="https://www.liondine.com" target="_blank">right now</a>
+          </p>
+          <p>
+            Lion Dine lets Columbia students see all the menu items at the eleven campus dining halls instantly rather than having to click back and force through each official (and slow) website. We scrape multiple times every day from the Columbia Dining sites to ensure that our information is up to date. We launched in October 2024 and have seen steady growth since then - as of April 2025, we're serving more than 2600 users (34% of all meal plan holders) on our busiest days: Monday through Thursday. Students have told us that they love Lion Dine, use it every day, and that it saves them a lot of time. <br><br>
+            This type of project is trendy now - you may have seen other versions from other schools on LinkedIn. A lot of universities' IT departments aren't making the optimal dining hall websites and the solutions aren't very technically difficult, so are a lot of fun for students to make themselves. I was inspired to make Lion Dine when my friend showed me the Yale Menus app - made by Erik Boesen several years ago, along with a directory of Yale students, creating something similar for Columbia seemed like a delightful way to solve a problem for my peers. At the time, Yale Menus and Princeton's Tiger Menus were the main options I could find online. Tiger Menus seemed like a more appropriate level of technical difficulty for our level of expertise, and a beautifully simple solution design wise, so we aimed to emulate what they had done. <br> <br> Owen Terry and I made this project together. We both hadn't ever made a website before and ran into a lot of challenges that now seem pretty laughable. It was our first time using GitHub collaboratively and figuring out how to automate actions.
+          </p>
+          <h3>What I learned</h3>
+          <ul>
+            <li>How to webscrape from a dynamically updating site using selenium in Python</li>
+            <li>How to host a webpage on render</li>
+            <li>Jinja2 and Flask</li>
+            <li>Marketing creativity matters (put 10 flyers in freshman dorm elevators and saw 400+ daily user bump)</li>
+            <li>Don't let perfectionism keep you at 90%. Launch as soon as possible once things are working</li>
+            <li>You don't always have to be the first mover to take over the market</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h2>Swipe Market</h2>
+          <p>Online marketplace for Columbia meal swipe exchanges</p>
+          <p>Swipe Market is a platform that connects students who want to buy, sell, and donate meal swipes. At the end of every semester, dining hall users tend to complain that they still have leftover swipes. The dining hall plans, which cost thousands per semester, are typically too large to finish. Even the smallest plan, 100 swipes per semester, is pretty hefty for someone who's shifted primarily to cooking or eating off campus. Freshmen are required to buy huge plans with swipes that expire weekly. And each swipe costs about $17. <br> <br>Also, we live in New York. Off campus food is expensive - a bowl at Dig Inn will run you almost $20 if you indulge in their delightful crispy chicken and caesar base. So Owen and I, following the completion of Lion Dine, created Swipe Market. We thought people might be willing to pay $5 for a swipe of pretty good (I'm from North Carolina and have tried UNC's dining halls and can tell you that Columbia is above the nation's median), unlimited dining hall food.  We launched almost exactly six months after Lion Dine and in this past week, have seen 60 listings posted and 20 interested buyers reach out to purchase the swipes. <br><br> The response from students has been very interesting - while Lion Dine serves a much wider base and is essentially a no-brainer solution, Swipe Market is more niche and controversial. Some students, on our anonymous message board, have expressed concern about the creation of a market and the imposition of capitalism into the swipe system. Because there's no way to digitally transfer swipes between accounts, the system is reliant on an in person interaction - users meeting up to swipe each other in. This is a pretty high friction point and made us slightly doubtful that people would actually want to use it. It turns out that sellers think it's worth about $5 to walk to a dining hall and swipe someone in. Interestingly, most people don't specify a dining hall they want to swipe for - majority of listings are for any dining hall, for a very wide time range. Weekdays are the highest traffic, which makes sense considering people typically take the weekends to eat out (informed by Lion Dine sinusoidal viewership patterns).<br><br>It would be naive to think that this can last forever - Columbia Dining is surely optimizing for the amount of swipes that students actually use, not the entire plans that they sell. We'll shut it down when we get a cease and desist, but until then, will hopefully continue to correct this inefficiency in the market and help people get cheap swipes/get value out of their swipes that would go unused. <br><br>Unlike Lion Dine, this project is very specific to Columbia. Not a lot of other schools would be appropriate candidates - the food is probably not good enough for a person without a meal plan to want to spend money on it. We also have a very small campus - there isn't a ton of walking required for sellers to do, regardless of the dining hall they're swiping a buyer into. We're very interested to see where this goes. At the moment, there's an imbalance between sellers and buyers - a lot more listings are available than people clicking on them. Our only marketing has been on Sidechat and posting the link on Lion Dine itself. This means that distribution has primarily been to the underclassmen who are using the dining halls all the time and checking the menus on our site. Owen and I are both abroad and are going to have our friends put up flyers on campus soon, in upperclassmen heavy locations. Hopefully this will correct the mismatch. Some of our friends have said they'll cancel their meal plans for next semester and just buy swipes when they feel like it. This would be very interesting and possibly prompt Columbia to action. We'll see!</p>
+          <h3>What I learned</h3>
+          <ul>
+            <li>How to set up Google Authentication</li>
+            <li>Postgres</li>
+            <li>JavaScript! Avoided using for Lion Dine to keep it light</li>
+            <li>Cursor works well but can get confused and needs to be checked - probably will move to another tool for next project</li>
+            <li>AI tools can let you focus on the product vision rather than getting stuck in the technical weeds but also can cause issues by deleting/changing things you don't want. Still have to be vigilant</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h2>Impact of Subway Centrality on Manhattan Public High School Performance</h2>
+          <p>I did this project during summer 2024 with Kathy Xu and Sandra Zelen through the Columbia Summer Undergraduate Research Experiences in Mathematical Modeling. We presented at a few Columbia research symposiums and Jane Street's Summer Math Day.<br> <br>I hope desperately that I can top this summer in terms of intellectual stimulation, fun, and great coworkers at some point in my working life. <br><br>This was a reminder that I have the privilege of being a student at one of the greatest universities in the world, with access to the greatest brains in the world. George Dragomir, math professor, and the program's advisor, is one of the kindest and most brilliant people I know. Several times over those two months we got to what felt like a complete brick wall and he would think for a bit and cheerily suggest a new technique to try. How do you know all of that! So cool to witness and such an honor that he was so invested in our success. As a student sitting in math lectures, I feel an extremely deep admiration for what I get to learn, even though I'm certainly not top of class at Columbia. It feels important to learn about what differentiation is, for some reason. This opportunity reminded me that caring about and enjoying what you're doing can get you a lot of places and that I'm not just a recipient of knowledge but know how to think and can use math creatively to do interesting stuff. <br><br>This summer confirmed that I want to live in New York for a long time and use my brain a lot in my job, even if it's not academia. </p>
+          <p>The project itself was a combination of graph theory with statistical analyses to understand if there was a relationship between Manhattan public high school's subway station centrality and their performance. We hypothesized that there would be a positive correlation between schools that were more connected to the subway network and their rates of success as measured by the NYC Department of Education. </p>
+        
+          <h3>What I learned</h3>
+          <ul>
+            <li>How to iterate on a research idea</li>
+            <li>Principal Component Analysis</li>
+            <li>Various significance tests</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
