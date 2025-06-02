@@ -32,19 +32,6 @@ body {
   
   .container {
     margin: 1rem;
-    width: 100%;
-    padding: 0 1rem;
-  }
-  
-  body {
-    background-color: blue;
-  }
-  
-  .project-card {
-    margin-bottom: 1rem;
-  }
-  
-  .project-card h2 {
-    font-size: 1.2rem;
+    width: 90%;
   }
 }
