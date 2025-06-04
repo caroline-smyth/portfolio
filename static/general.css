@@ -1,4 +1,31 @@
+:root {
+  /* Default color scheme */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #4a90e2;
+  --link-color: #2c5282;
+}
+
+/* Color scheme 2 */
+[data-theme="scheme2"] {
+  --bg-color: #f0f4f8;
+  --text-color: #2d3748;
+  --accent-color: #805ad5;
+  --link-color: #553c9a;
+}
+
+/* Color scheme 3 */
+[data-theme="scheme3"] {
+  --bg-color: #1a202c;
+  --text-color: #e2e8f0;
+  --accent-color: #48bb78;
+  --link-color: #38a169;
+}
+
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
   /*background-color: rgb(234, 195, 233);*/
 }
 
@@ -6,7 +33,7 @@ body {
   /*font-family: 'Roboto', sans-serif;*/
   margin-top: 2rem;
   margin-left: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .container {
@@ -36,6 +63,33 @@ body {
   min-height: 80vh;
 }
 
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.name-container {
+  display: flex;
+  
+}
+
+.color-scheme-toggle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--text-color);
+  background-color: var(--bg-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0;
+}
+
+.color-scheme-toggle:hover {
+  transform: scale(1.1);
+}
 
 @media (min-width: 1200px) {
   .container {
