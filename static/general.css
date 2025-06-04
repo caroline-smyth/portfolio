@@ -112,5 +112,6 @@ a:hover {
 @media (max-width: 480px) {
   .index-container {
     margin-left: 0.5rem;
+    background-color: red;
   }
 }
