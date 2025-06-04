@@ -73,7 +73,7 @@ a:hover {
 
 .name-container {
   display: flex;
-  
+
 }
 
 .color-scheme-toggle {
@@ -106,5 +106,11 @@ a:hover {
   .container {
     margin: 1rem;
     width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-container {
+    margin-left: 0;
   }
 }
