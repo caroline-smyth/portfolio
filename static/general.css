@@ -106,6 +106,7 @@ a:hover {
     margin: 1rem;
     width: 90%;
   }
+
   .soup, .shuttlecocks, .picasso, .greco, .velazquez, .gothic, .newgothic {
     width: 30%;
     height: auto;
@@ -129,8 +130,11 @@ a:hover {
   .soup {
     width: 40%;
   }
-  body {
-    background-color: red;
+
+  .image-container{
+  }
+  .christ-container {
+    width: 30%;
   }
 }
 
