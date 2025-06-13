@@ -178,6 +178,6 @@ a:hover {
     height: auto;
   }
   .image-container, .christ-container{
-    align-items: first baseline;
+    align-items: flex-start;
   }
 }
