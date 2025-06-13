@@ -177,4 +177,7 @@ a:hover {
     width: 30%;
     height: auto;
   }
+  .image-container, .christ-container{
+    align-items: first baseline;
+  }
 }
