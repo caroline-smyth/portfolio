@@ -151,6 +151,12 @@ a:hover {
   padding-top: 2rem;
 }
 
+.image-container img,
+.christ-container img {
+  transform: scale(1);
+  transform-origin: top left;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 40%;
@@ -167,10 +173,9 @@ a:hover {
     margin: 1rem;
     width: 90%;
   }
-
-  .greco, .goya, .picasso, .velazquez, .shuttlecocks, .soup{
-    width: 50%;
-    height: auto;
+  .image-container img,
+  .christ-container img {
+    transform: scale(0.5);
   }
 }
 
