@@ -122,12 +122,16 @@ a:hover {
   margin-right: 1rem;
 }
 
-.image{
+.soup, .shuttlecocks{
   width: 150px;
   height: 150px;
   object-fit: cover;
   float: left;
   margin-right: 1rem;
+}
+
+.soup {
+  width: 250px;
 }
 
 .image-container{
