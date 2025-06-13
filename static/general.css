@@ -169,8 +169,8 @@ a:hover {
   }
 
   .greco, .goya, .picasso, .velazquez, .shuttlecocks, .soup{
-    height: 50%;
-    width: auto;
+    width: 50%;
+    height: auto;
   }
 }
 
