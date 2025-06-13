@@ -112,28 +112,9 @@ a:hover {
     height: auto;
   }
 
-  .velazquez {
-    height: auto;
-    width: 25%;
-  }
-
-  .picasso {
-    width: 40%;
-    height: auto;
-  }
-
-  .greco {
-    height: auto;
-    width: 25%;
-  }
-
-  .soup {
-    width: 40%;
-  }
-
   .image-container{
-    margin-left: 5px;
-    margin-right: 5px;
+    height: 10px;
+    width: 10px;
   }
   .christ-container {
     width: 10px;
