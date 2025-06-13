@@ -114,8 +114,27 @@ a:hover {
   }
 }
 
-.ducks{
-  width: 300px;
+.fountain{
+  width: 150px;
   height: 200px;
   object-fit: cover;
+  float: left;
+  margin-right: 1rem;
+}
+
+.image{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  float: left;
+  margin-right: 1rem;
+}
+
+.image-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
