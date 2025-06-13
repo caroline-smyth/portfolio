@@ -106,7 +106,12 @@ a:hover {
     margin: 1rem;
     width: 90%;
   }
+}
 
+@media (max-width: 480px) {
+  .index-container {
+    margin-left: 1.5rem;
+  }
   .soup, .shuttlecocks, .picasso, .greco, .velazquez, .gothic, .newgothic {
     width: 30%;
     height: auto;
@@ -130,15 +135,7 @@ a:hover {
   .soup {
     width: 40%;
   }
-}
-
-@media (max-width: 480px) {
-  .index-container {
-    margin-left: 1.5rem;
-  }
-
-  .image-container{
-    
+  body {background-color: red;
   }
 }
 
