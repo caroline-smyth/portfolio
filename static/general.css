@@ -107,11 +107,6 @@ a:hover {
     width: 90%;
   }
 
-  .soup, .shuttlecocks, .picasso, .greco, .velazquez, .gothic, .newgothic {
-    width: 30%;
-    height: auto;
-  }
-
   .image-container{
     height: 10px;
     width: 10px;
