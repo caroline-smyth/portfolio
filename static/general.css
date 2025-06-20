@@ -178,8 +178,9 @@ a:hover {
   .index-container {
     margin-left: 1.5rem;
   }
-  .velazquez, .greco, .picasso, .shuttlecocks, .soup {
-    width: 30%;
+  
+  .shuttlecocks, .soup {
+    width: 50%;
     height: auto;
   }
   .image-container, .christ-container{
