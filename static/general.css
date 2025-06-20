@@ -129,9 +129,14 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-.christ-container{
-  justify-content: flex-start;
+.image-caption{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.6rem;
+  color: gray;
 }
+
 .velazquez{
   height: 250px;
   width: 180px;
