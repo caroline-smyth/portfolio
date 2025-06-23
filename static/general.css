@@ -183,6 +183,12 @@ a:hover {
     width: 50%;
     height: auto;
   }
+
+  .velazquez, .greco, .picasso{
+    width: 90%;
+    height: auto;
+  }
+
   .image-container, .christ-container{
     align-items: flex-start;
   }
