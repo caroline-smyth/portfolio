@@ -26,8 +26,11 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
-  /*background-color: rgb(234, 195, 233);*/
+  /*background-color: rgb(234, 195, 233);
+  font-family: 'Satoshi', sans-serif;*/
 }
+
+
 
 .header {
   /*font-family: 'Roboto', sans-serif;*/
@@ -52,6 +55,7 @@ body {
 .name{
   font-size: 2.4rem;
   margin-bottom: 0.2rem;
+
 }
 
 .index-container {
