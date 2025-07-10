@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /staging/
+
+Sitemap: https://caroline-smyth.com/sitemap.xml

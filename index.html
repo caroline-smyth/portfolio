@@ -3,31 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Caroline Smyth</title>
+    <meta name="description" content="I'm a senior at Columbia studying applied math and computer science. Interested in math, writing, and making stuff for people.">
+    <meta name="keywords" content="Caroline Smyth, software engineer, Columbia University, web development, data science, mathematical modeling, Lion Dine, Swipe Market">
+    <meta name="author" content="Caroline Smyth">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://caroline-smyth.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caroline-smyth.com/">
+    <meta property="og:title" content="Caroline Smyth">
+    <meta property="og:description" content="Software engineer and researcher at Columbia University. Creator of Lion Dine and Swipe Market.">
+    <meta property="og:site_name" content="Caroline Smyth Portfolio">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://caroline-smyth.com/">
+    <meta property="twitter:title" content="Caroline Smyth">
+    <meta property="twitter:description" content="Software engineer and researcher at Columbia University. Creator of Lion Dine and Swipe Market.">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Caroline Smyth",
+      "url": "https://caroline-smyth.com",
+      "jobTitle": "Software Engineer & Researcher",
+      "alumniOf": {
+        "@type": "Organization",
+        "name": "Columbia University"
+      },
+      "knowsAbout": ["Web Development", "Data Science", "Mathematical Modeling", "Software Engineering"],
+      "sameAs": [
+        "https://www.linkedin.com/in/caroline-smyth-674897175/",
+        "https://github.com/caroline-smyth"
+      ]
+    }
+    </script>
+    
     <link rel="stylesheet" href="static/general.css">
+    <!-- Performance Optimizations -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://api.fontshare.com">
+    <link rel="preload" href="static/general.css" as="style">
+    <link rel="preload" href="static/functions.js" as="script">
+    
+    <!-- Fonts with optimized loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
-    <title>Caroline Smyth</title>
-    <script src="static/functions.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="static/general.css">
+    <script src="static/functions.js" defer></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
  
 </head>
 <body>
 
-    <div class="index-container">
-    <div class="name-container">
-        <h1 class="name">Caroline Smyth</h1>
-    </div>
-    <div class="nav-bar">
-        <div class="nav-bar-item"><a href="templates/projects.html">Projects</a></div>
-        <div class="nav-bar-item"><a href="templates/writing.html">Writing</a></div>
-        <div class="nav-bar-item"><a href="https://www.linkedin.com/in/caroline-smyth-674897175/" target="_blank">LinkedIn</a>, <a href="https://github.com/caroline-smyth" target="_blank">GitHub</a>, <a href="templates/favorites.html">Favorites</a></div>
-    </div>
-</div>
+    <main class="index-container">
+        <header class="name-container">
+            <h1 class="name">Caroline Smyth</h1>
+        </header>
+        <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+            <div class="nav-bar-item"><a href="templates/projects.html">Projects</a></div>
+            <div class="nav-bar-item"><a href="templates/writing.html">Writing</a></div>
+            <div class="nav-bar-item">
+                <a href="https://www.linkedin.com/in/caroline-smyth-674897175/" target="_blank" rel="noopener">LinkedIn</a>, 
+                <a href="https://github.com/caroline-smyth" target="_blank" rel="noopener">GitHub</a>, 
+                <a href="templates/favorites.html">Favorites</a>
+            </div>
+        </nav>
+    </main>
 </body>
 </html>
