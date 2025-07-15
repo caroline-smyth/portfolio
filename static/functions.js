@@ -61,14 +61,7 @@ function scatter() {
   }
 }
 
-window.addEventListener('load', () => {
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(() => {
-      scatter();
-      document.body.addEventListener('click', scatter);
-    });
-  } else {
+window.addEventListener('load', () => {     
     scatter();
     document.body.addEventListener('click', scatter);
-  }
 });
