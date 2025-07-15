@@ -59,7 +59,7 @@ body {
 }
 
 .index-container {
-  margin-left: 5rem;
+  margin-left: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,4 +196,40 @@ a:hover {
   .image-container, .christ-container{
     align-items: flex-start;
   }
+}
+
+.nav-bar {
+  position: relative;
+  width: 100%; 
+  height: 400px;  
+  margin: 2rem;
+}
+
+.index-container {
+  position: relative;
+  width: 100%; 
+  height: 600px; 
+}
+
+.name-container,
+.nav-bar-item {
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.random-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 30vh auto;
+}
+
+@media (max-width: 500px) {
+  .random-box {
+    width: 95vw;
+    height: 300px;
+    max-height: 50vh;
+  }
+}
+.name-container, .nav-bar-item {
+  position: absolute;
 }
