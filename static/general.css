@@ -215,18 +215,29 @@ a:hover {
 .nav-bar-item {
   position: absolute;
   transition: transform 0.3s ease;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .random-box {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   margin: 30vh auto;
 }
 
 @media (max-width: 500px) {
   .random-box {
-    width: 95vw;
-    height: 300px;
-    max-height: 50vh;
+    width: 85vw;
+    height: 700px;
   }
+
+  .nav-bar, .name-container {
+    margin: 1rem;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
 }
