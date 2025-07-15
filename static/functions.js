@@ -1,4 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
+function doBoxesOverlap(a, b) {
+  return !(
+    a.right < b.left ||
+    a.left > b.right ||
+    a.bottom < b.top ||
+    a.top > b.bottom
+  );
+}
+
+function scatter() {
   const box = document.querySelector('.random-box');
   if (!box) return;
   // gather the name + all nav items
@@ -6,65 +15,60 @@ document.addEventListener('DOMContentLoaded', () => {
     box.querySelector('.name-container'),
     ...box.querySelectorAll('.nav-bar-item')
   ];
+  // Remove transforms to get true size
+  items.forEach(el => el.style.transform = 'none');
+  box.offsetWidth;
 
-  function doBoxesOverlap(a, b) {
-    return !(
-      a.right < b.left ||
-      a.left > b.right ||
-      a.bottom < b.top ||
-      a.top > b.bottom
-    );
-  }
+  const W = box.clientWidth;
+  const H = box.clientHeight;
+  const placed = [];
+  const maxTries = 200;
 
-  function scatter() {
-    // Remove transforms to get true size
-    items.forEach(el => el.style.transform = 'none');
-    box.offsetWidth;
-
-    const W = box.clientWidth;
-    const H = box.clientHeight;
-    const placed = [];
-    const maxTries = 200;
-
-    for (let i = 0; i < items.length; i++) {
-      const el = items[i];
-      const w = el.offsetWidth;
-      const h = el.offsetHeight;
-      let found = false;
-      let tries = 0;
-      let cx, cy, bbox;
-      while (!found && tries < maxTries) {
-        // Ensure the element stays fully inside the box
-        cx = Math.random() * (W - w) + w / 2;
-        cy = Math.random() * (H - h) + h / 2;
-        bbox = {
-          left: cx - w / 2,
-          right: cx + w / 2,
-          top: cy - h / 2,
-          bottom: cy + h / 2
-        };
-        // Check for overlap with already placed elements
-        found = placed.every(other => !doBoxesOverlap(bbox, other.bbox));
-        tries++;
-      }
-      // If not found after maxTries, stack vertically as fallback
-      if (!found) {
-        cx = w / 2 + 10;
-        cy = (i + 1) * (h + 10) - h / 2;
-        bbox = {
-          left: cx - w / 2,
-          right: cx + w / 2,
-          top: cy - h / 2,
-          bottom: cy + h / 2
-        };
-      }
-      el.style.transform = `translate(${cx - w/2}px, ${cy - h/2}px)`;
-      placed.push({ bbox });
+  for (let i = 0; i < items.length; i++) {
+    const el = items[i];
+    const w = el.offsetWidth;
+    const h = el.offsetHeight;
+    let found = false;
+    let tries = 0;
+    let cx, cy, bbox;
+    while (!found && tries < maxTries) {
+      // Ensure the element stays fully inside the box
+      cx = Math.random() * (W - w) + w / 2;
+      cy = Math.random() * (H - h) + h / 2;
+      bbox = {
+        left: cx - w / 2,
+        right: cx + w / 2,
+        top: cy - h / 2,
+        bottom: cy + h / 2
+      };
+      // Check for overlap with already placed elements
+      found = placed.every(other => !doBoxesOverlap(bbox, other.bbox));
+      tries++;
     }
+    // If not found after maxTries, stack vertically as fallback
+    if (!found) {
+      cx = w / 2 + 10;
+      cy = (i + 1) * (h + 10) - h / 2;
+      bbox = {
+        left: cx - w / 2,
+        right: cx + w / 2,
+        top: cy - h / 2,
+        bottom: cy + h / 2
+      };
+    }
+    el.style.transform = `translate(${cx - w/2}px, ${cy - h/2}px)`;
+    placed.push({ bbox });
   }
+}
 
-  // Initial scatter
-  scatter();
-  // Listen for clicks anywhere on the page
-  document.body.addEventListener('click', scatter);
+window.addEventListener('load', () => {
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => {
+      scatter();
+      document.body.addEventListener('click', scatter);
+    });
+  } else {
+    scatter();
+    document.body.addEventListener('click', scatter);
+  }
 });
