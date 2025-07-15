@@ -59,7 +59,7 @@ body {
 }
 
 .index-container {
-  margin-left: 2rem auto;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,7 +229,4 @@ a:hover {
     height: 300px;
     max-height: 50vh;
   }
-}
-.name-container, .nav-bar-item {
-  position: absolute;
 }
