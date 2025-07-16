@@ -51,7 +51,8 @@ body {
 }
 
 .index-container {
-  margin-left: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,7 +173,8 @@ a:hover {
 
 @media (max-width: 480px) {
   .index-container {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   
   .shuttlecocks, .soup {
