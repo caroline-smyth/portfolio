@@ -7,6 +7,15 @@ function doBoxesOverlap(a, b) {
   );
 }
 
+function first_scatter(clickedEl) {
+  const box = document.querySelector('.random-box');
+  if (!box) return;
+  scatter();
+  if (clickedEl) {
+    clickedEl.style.visibility = 'hidden';
+  }
+}
+
 function scatter() {
   const box = document.querySelector('.random-box');
   if (!box) return;
@@ -61,7 +70,16 @@ function scatter() {
   }
 }
 
+let firstClickHandled = false;
+
 window.addEventListener('load', () => {     
     scatter();
-    document.body.addEventListener('click', scatter);
+    document.body.addEventListener('click', () => {
+      if (!firstClickHandled) {
+        const firstBtn = document.getElementById('first-click-btn');
+        if (firstBtn) firstBtn.style.visibility = 'hidden';
+        firstClickHandled = true;
+      }
+      scatter();
+    });
 });
