@@ -24,7 +24,7 @@ function scatter() {
     box.querySelector('.name-container'),
     ...box.querySelectorAll('.nav-bar-item')
   ];
-  // Remove transforms to get true size
+  // remove transforms to get true size
   items.forEach(el => el.style.transform = 'none');
   box.offsetWidth;
 
@@ -41,7 +41,7 @@ function scatter() {
     let tries = 0;
     let cx, cy, bbox;
     while (!found && tries < maxTries) {
-      // Ensure the element stays fully inside the box
+      // ensure the element stays fully inside the box
       cx = Math.random() * (W - w) + w / 2;
       cy = Math.random() * (H - h) + h / 2;
       bbox = {
@@ -50,7 +50,7 @@ function scatter() {
         top: cy - h / 2,
         bottom: cy + h / 2
       };
-      // Check for overlap with already placed elements
+      // check for overlap with already placed elements
       found = placed.every(other => !doBoxesOverlap(bbox, other.bbox));
       tries++;
     }
